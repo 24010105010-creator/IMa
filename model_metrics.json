@@ -1,0 +1,102 @@
+{
+    "dataset_shape": [
+        200,
+        4
+    ],
+    "selected_degree": 2,
+    "features": [
+        "TV",
+        "Radio",
+        "Newspaper"
+    ],
+    "num_poly_features": 9,
+    "poly_feature_names": [
+        "TV",
+        "Radio",
+        "Newspaper",
+        "TV^2",
+        "TV Radio",
+        "TV Newspaper",
+        "Radio^2",
+        "Radio Newspaper",
+        "Newspaper^2"
+    ],
+    "intercept": 15.3306,
+    "coefficients": [
+        5.5776,
+        -0.3012,
+        -0.0147,
+        -1.9384,
+        1.3966,
+        0.007,
+        0.866,
+        0.1519,
+        -0.0005
+    ],
+    "train_metrics": {
+        "r2": 0.9273,
+        "mae": 1.0652,
+        "mse": 1.9473,
+        "rmse": 1.3954
+    },
+    "test_metrics": {
+        "r2": 0.9506,
+        "mae": 0.9517,
+        "mse": 1.5272,
+        "rmse": 1.2358
+    },
+    "degree_comparison": [
+        {
+            "degree": 1,
+            "num_features": 3,
+            "train_r2": 0.9001,
+            "test_r2": 0.9059,
+            "adj_test_r2": 0.8981,
+            "train_rmse": 1.6359,
+            "test_rmse": 1.7052,
+            "train_mae": 1.2344,
+            "test_mae": 1.2748,
+            "cv_r2_mean": 0.8793,
+            "cv_rmse_mean": 1.6808
+        },
+        {
+            "degree": 2,
+            "num_features": 9,
+            "train_r2": 0.9288,
+            "test_r2": 0.9533,
+            "adj_test_r2": 0.9393,
+            "train_rmse": 1.3812,
+            "test_rmse": 1.2011,
+            "train_mae": 1.0566,
+            "test_mae": 0.9034,
+            "cv_r2_mean": 0.9043,
+            "cv_rmse_mean": 1.5185
+        },
+        {
+            "degree": 3,
+            "num_features": 19,
+            "train_r2": 0.9366,
+            "test_r2": 0.9414,
+            "adj_test_r2": 0.8856,
+            "train_rmse": 1.3031,
+            "test_rmse": 1.3462,
+            "train_mae": 0.9851,
+            "test_mae": 0.9347,
+            "cv_r2_mean": 0.8379,
+            "cv_rmse_mean": 1.907
+        },
+        {
+            "degree": 4,
+            "num_features": 34,
+            "train_r2": 0.9537,
+            "test_r2": 0.6517,
+            "adj_test_r2": -1.7164,
+            "train_rmse": 1.114,
+            "test_rmse": 3.2805,
+            "train_mae": 0.8475,
+            "test_mae": 1.7202,
+            "cv_r2_mean": 0.8939,
+            "cv_rmse_mean": 1.6016
+        }
+    ]
+}
